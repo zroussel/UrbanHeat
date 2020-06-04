@@ -1,0 +1,13 @@
+name: SensorInstall
+channels:
+	- defaults
+	- conda-forge
+dependencies:
+	- python=3.7
+	- spyder
+	- numpy
+	- pip
+	- pip:
+		- adafruit-circuitpython-max31855
+		- adafruit_gps
+		- adafruit-circuitpython-bme280
