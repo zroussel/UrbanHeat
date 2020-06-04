@@ -106,7 +106,7 @@ c=0
 while c<5:
     print(c)
     if c==3:
-        break
+        break 
     c=c+1
 #break ends a loop   
 #continue skips remining code and codes back to top of loop
@@ -132,3 +132,14 @@ def returnAdd(var4,var5):
 
 sum=returnAdd(10,3)
 print(sum)
+
+#absolute value
+abs(-10)
+
+#bool 0 is false, any other value is true
+bool(0)
+
+#help
+#help(sent.funcname)
+
+#eval(string)
