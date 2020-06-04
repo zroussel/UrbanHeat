@@ -22,11 +22,11 @@ while True:
     TempF = TempC*9/5 +32
 
 T=(TempC,TempF)   
-print(tabulate(T, headers=["TempC", "TempF"]))
+print(tabulate(time,T, headers=["Time", "TempC", "TempF"]))
 
 with open ('TemperatureData.csv', mode='w') as csv_file:
     fieldnames = ['Time', 'TempC', 'TempF']
     writer=csv.DictWriter(csv_file, fieldnames=fieldnames)
     
     writer.writeheader()
-    startrepeat(writer.writerow({time,TempC,TempF}))
+    #startrepeat(writer.writerow({time,TempC,TempF}))
