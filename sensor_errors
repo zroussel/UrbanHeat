@@ -1,0 +1,61 @@
+>>> %Run Humidity.py
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.7/site-packages/adafruit_bus_device/i2c_device.py", line 184, in __probe_for_device
+    self.i2c.writeto(self.device_address, b"")
+  File "/home/pi/.local/lib/python3.7/site-packages/busio.py", line 111, in writeto
+    return self._i2c.writeto(address, buffer, stop=stop)
+  File "/home/pi/.local/lib/python3.7/site-packages/adafruit_blinka/microcontroller/generic_linux/i2c.py", line 49, in writeto
+    self._i2c_bus.write_bytes(address, buffer[start:end])
+  File "/home/pi/.local/lib/python3.7/site-packages/Adafruit_PureIO/smbus.py", line 308, in write_bytes
+    self._device.write(buf)
+OSError: [Errno 121] Remote I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.7/site-packages/adafruit_bus_device/i2c_device.py", line 190, in __probe_for_device
+    self.i2c.readfrom_into(self.device_address, result)
+  File "/home/pi/.local/lib/python3.7/site-packages/busio.py", line 101, in readfrom_into
+    return self._i2c.readfrom_into(address, buffer, stop=stop)
+  File "/home/pi/.local/lib/python3.7/site-packages/adafruit_blinka/microcontroller/generic_linux/i2c.py", line 56, in readfrom_into
+    readin = self._i2c_bus.read_bytes(address, end - start)
+  File "/home/pi/.local/lib/python3.7/site-packages/Adafruit_PureIO/smbus.py", line 179, in read_bytes
+    return self._device.read(number)
+OSError: [Errno 121] Remote I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/Downloads/UrbanHeat-master/Humidity.py", line 21, in <module>
+    bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c)
+  File "/home/pi/.local/lib/python3.7/site-packages/adafruit_bme280.py", line 482, in __init__
+    self._i2c = i2c_device.I2CDevice(i2c, address)
+  File "/home/pi/.local/lib/python3.7/site-packages/adafruit_bus_device/i2c_device.py", line 69, in __init__
+    self.__probe_for_device()
+  File "/home/pi/.local/lib/python3.7/site-packages/adafruit_bus_device/i2c_device.py", line 192, in __probe_for_device
+    raise ValueError("No I2C device at address: %x" % self.device_address)
+ValueError: No I2C device at address: 77
+>>> %Run GPS.py
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 265, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/Downloads/UrbanHeat-master/GPS.py", line 16, in <module>
+    uart=serial.Serial("/dev/ttyUSB0", baudrate=9600, timeout=10)
+  File "/usr/lib/python3/dist-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyUSB0: [Errno 2] No such file or directory: '/dev/ttyUSB0'
+>>> 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Python 3.7.3 (/usr/bin/python3)
+>>> %Run Thermocouple.py
+Traceback (most recent call last):
+  File "/home/pi/Downloads/UrbanHeat-master/Thermocouple.py", line 13, in <module>
+    from tabulate import tabulate
+ModuleNotFoundError: No module named 'tabulate'
