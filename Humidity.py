@@ -6,7 +6,7 @@ Created on Wed Jun  3 14:22:14 2020
 """
 
 import time
- 
+import datetime
 import board
 import busio
 import adafruit_bme280
@@ -14,18 +14,25 @@ import math
 
 b = 17.62
 c = 243.12
-gamma = (b * bme280.temperature /(c + bme280.temperature)) + math.log(bme280.humidity / 100.0)
-dewpoint = (c * gamma) / (b - gamma)
  
 # Create library object using our Bus I2C port
 i2c = busio.I2C(board.SCL, board.SDA)
 bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c)
- 
+
+gamma = (b * bme280.temperature /(c + bme280.temperature)) + math.log(bme280.humidity / 100.0)
+dewpoint = (c * gamma) / (b - gamma)
 
  
 # change this to match the location's pressure (hPa) at sea level
 bme280.sea_level_pressure = 1007.6
- 
+t=time.time()
+tspec=datetime.datetime.now().time()
+Temp=bme280.temperature
+H = bme280.humidity
+P = bme280.pressure
+A = bme280.altitude
+print(Temp, H, P, A)
+"""
 while True:
     print("\nTemperature: %0.1f C" % bme280.temperature)
     print("Humidity: %0.1f %%" % bme280.humidity)
@@ -34,4 +41,4 @@ while True:
     print(dewpoint)
     time.sleep(2)
     
-    
+"""
