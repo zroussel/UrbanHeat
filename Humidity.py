@@ -11,6 +11,7 @@ import board
 import busio
 import adafruit_bme280
 import math
+import csv
 
 b = 17.62
 c = 243.12
@@ -31,7 +32,14 @@ Temp=bme280.temperature
 H = bme280.humidity
 P = bme280.pressure
 A = bme280.altitude
-print(Temp, H, P, A)
+print(t,tspec,Temp, H, P, A)
+
+f=open("test1.csv","w",newline="")
+wc=csv.writer(f)
+
+wc.writerow([t,tspec,Temp,H,P,A])
+
+f.close()
 """
 while True:
     print("\nTemperature: %0.1f C" % bme280.temperature)

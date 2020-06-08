@@ -6,6 +6,9 @@ Created on Wed Jun  3 12:00:15 2020
 """
 
 import time
+import datetime
+import csv
+"""
 import board
 import busio
 import digitalio
@@ -21,25 +24,33 @@ TempC=max31855.temperature
 TempF = TempC*(9/5) +32
 print(TempC)
 print(TempF)
+"""
 
 t=time.localtime()
 current_time=time.strftime("%H:%M:%S", t)
 print(current_time)
 
-import datetime
+tspec=datetime.datetime.now().time()
 print(datetime.datetime.now().time())
 
 
 
 starttime=time.time() 
 
-while True: 
+while True : 
  
-    print(TempC)
-    print(TempF)
+    #print(TempC)
+    #print(TempF)
     print(datetime.datetime.now().time())
-    time.sleep(1.00 - ((time.time() - starttime() % 1.00)))
+    f=open("test1.csv","w", newline="")
+    wc=csv.writer(f)
 
+    wc.writerow([current_time,tspec])
+
+    time.sleep(1.00 -((time.time() -starttime) %1.00))
+    
+#while  time.time() == 00 :
+#    f.close()
 """
 while True:
     TempC = max31855.temperature
