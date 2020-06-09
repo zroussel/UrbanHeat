@@ -13,8 +13,6 @@ import board
 import busio
 import digitalio
 import adafruit_max31855
-#from tabulate import tabulate
-#import csv
 
 spi = busio.SPI(board.SCK, MOSI=board.MOSI, MISO=board.MISO)
 cs = digitalio.DigitalInOut(board.D5)
@@ -27,27 +25,34 @@ print(TempF)
 """
 
 t=time.localtime()
-current_time=time.strftime("%H:%M:%S", t)
-print(current_time)
+#current_time=time.strftime("%H:%M:%S", t)
+#print(current_time)
 
-tspec=datetime.datetime.now().time()
-print(datetime.datetime.now().time())
+#tspec=datetime.datetime.now().time()
+#print(datetime.datetime.now().time())
 
-
+print(t)
 
 starttime=time.time() 
+f=open("test1.csv","w", newline="")
+#create/open a file
+#NOTE, running this program more than once will overwrite this file
 
+
+    
 while True : 
  
     #print(TempC)
     #print(TempF)
     print(datetime.datetime.now().time())
-    f=open("test1.csv","w", newline="")
+    
     wc=csv.writer(f)
-
+    current_time=time.strftime("%H:%M:%S", t)
+    tspec=datetime.datetime.now().time()
     wc.writerow([current_time,tspec])
 
-    time.sleep(1.00 -((time.time() -starttime) %1.00))
+    time.sleep(1.00 -((time.time() - starttime) % 1.00))
+    #RUN CODE EVERY 1 SECOND 
     
 #while  time.time() == 00 :
 #    f.close()
