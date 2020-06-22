@@ -1,0 +1,688 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group expanded="1" name="" checked="Qt::Checked">
+    <customproperties/>
+    <layer-tree-layer providerKey="delimitedtext" expanded="1" name="pitest6-18-20-test1WALKING" checked="Qt::Checked" id="pitest6_18_20_test1WALKING_8167cfec_a7f5_4b57_9d91_69e61302aaac" source="./pitest6-18-20-test1WALKING.csv?type=csv&amp;detectTypes=yes&amp;xField=LONG&amp;yField=LAT&amp;crs=EPSG:4979&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" legend_exp="">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer simplifyDrawingTol="1" simplifyLocal="1" minScale="100000000" wkbType="Point" styleCategories="AllStyleCategories" labelsEnabled="0" type="vector" autoRefreshEnabled="0" maxScale="0" geometry="Point" refreshOnNotifyMessage="" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" simplifyAlgorithm="0" simplifyMaxScale="1" autoRefreshTime="0" refreshOnNotifyEnabled="0">
+      <extent>
+        <xmin>-73.24267333333334307</xmin>
+        <ymin>44.47684833333332932</ymin>
+        <xmax>-73.20662000000000091</xmax>
+        <ymax>44.49291499999999644</ymax>
+      </extent>
+      <id>pitest6_18_20_test1WALKING_8167cfec_a7f5_4b57_9d91_69e61302aaac</id>
+      <datasource>file:./pitest6-18-20-test1WALKING.csv?type=csv&amp;detectTypes=yes&amp;xField=LONG&amp;yField=LAT&amp;crs=EPSG:4979&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>pitest6-18-20-test1WALKING</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,3],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],AXIS["ellipsoidal height (h)",up,ORDER[3],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World (by country)"],BBOX[-90,-180,90,180]],ID["EPSG",4979]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>60111</srsid>
+          <srid>520000111</srid>
+          <authid>EPSG:4979</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxz="0" minz="0" dimensions="2" crs="" maxx="0" minx="0" maxy="0" miny="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="">delimitedtext</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 enableorderby="0" forceraster="0" attr="TEMP1F" symbollevels="0" graduatedMethod="GraduatedColor" type="graduatedSymbol">
+        <ranges>
+          <range upper="60.000000000000000" symbol="0" label="0.0 - 0.0" lower="0.000000000000000" render="true"/>
+          <range upper="65.000000000000000" symbol="1" label="0.0 - 0.0" lower="60.000000000000000" render="true"/>
+          <range upper="70.000000000000000" symbol="2" label="0.0 - 0.0" lower="65.000000000000000" render="true"/>
+          <range upper="74.000000000000000" symbol="3" label="0.0 - 0.0" lower="70.000000000000000" render="true"/>
+          <range upper="78.000000000000000" symbol="4" label="0.0 - 0.0" lower="74.000000000000000" render="true"/>
+          <range upper="82.000000000000000" symbol="5" label="0.0 - 0.0" lower="78.000000000000000" render="true"/>
+          <range upper="86.000000000000000" symbol="6" label="0.0 - 0.0" lower="82.000000000000000" render="true"/>
+          <range upper="90.000000000000000" symbol="7" label="0.0 - 0.0" lower="86.000000000000000" render="true"/>
+          <range upper="94.000000000000000" symbol="8" label="0.0 - 0.0" lower="90.000000000000000" render="true"/>
+          <range upper="98.000000000000000" symbol="9" label="0.0 - 0.0" lower="94.000000000000000" render="true"/>
+        </ranges>
+        <symbols>
+          <symbol name="0" clip_to_extent="1" type="marker" force_rhr="0" alpha="1">
+            <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="43,131,186,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="1" clip_to_extent="1" type="marker" force_rhr="0" alpha="1">
+            <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="100,171,176,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="2" clip_to_extent="1" type="marker" force_rhr="0" alpha="1">
+            <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="157,211,167,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="3" clip_to_extent="1" type="marker" force_rhr="0" alpha="1">
+            <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="199,233,173,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="4" clip_to_extent="1" type="marker" force_rhr="0" alpha="1">
+            <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="237,248,185,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="5" clip_to_extent="1" type="marker" force_rhr="0" alpha="1">
+            <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="255,237,170,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="6" clip_to_extent="1" type="marker" force_rhr="0" alpha="1">
+            <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="254,201,128,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="7" clip_to_extent="1" type="marker" force_rhr="0" alpha="1">
+            <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="249,158,89,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="8" clip_to_extent="1" type="marker" force_rhr="0" alpha="1">
+            <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="232,91,58,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="9" clip_to_extent="1" type="marker" force_rhr="0" alpha="1">
+            <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="215,25,28,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <source-symbol>
+          <symbol name="0" clip_to_extent="1" type="marker" force_rhr="0" alpha="1">
+            <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="190,207,80,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </source-symbol>
+        <colorramp name="[source]" type="gradient">
+          <prop k="color1" v="43,131,186,255"/>
+          <prop k="color2" v="215,25,28,255"/>
+          <prop k="discrete" v="0"/>
+          <prop k="rampType" v="gradient"/>
+          <prop k="stops" v="0.25;171,221,164,255:0.5;255,255,191,255:0.75;253,174,97,255"/>
+        </colorramp>
+        <classificationMethod id="Custom">
+          <symmetricMode enabled="0" astride="0" symmetrypoint="0"/>
+          <labelFormat format="%1 - %2" labelprecision="4" trimtrailingzeroes="1"/>
+          <parameters>
+            <Option/>
+          </parameters>
+          <extraInformation/>
+        </classificationMethod>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <property value="0" key="embeddedWidgets/count"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory lineSizeType="MM" showAxis="1" penWidth="0" minScaleDenominator="0" enabled="0" labelPlacementMethod="XHeight" spacingUnit="MM" backgroundAlpha="255" spacingUnitScale="3x:0,0,0,0,0,0" backgroundColor="#ffffff" sizeType="MM" sizeScale="3x:0,0,0,0,0,0" maxScaleDenominator="1e+08" lineSizeScale="3x:0,0,0,0,0,0" penAlpha="255" scaleDependency="Area" width="15" barWidth="5" penColor="#000000" opacity="1" diagramOrientation="Up" scaleBasedVisibility="0" spacing="5" direction="0" rotationOffset="270" height="15" minimumSize="0">
+          <fontProperties style="" description="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0"/>
+          <axisSymbol>
+            <symbol name="" clip_to_extent="1" type="line" force_rhr="0" alpha="1">
+              <layer enabled="1" locked="0" pass="0" class="SimpleLine">
+                <prop k="capstyle" v="square"/>
+                <prop k="customdash" v="5;2"/>
+                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="customdash_unit" v="MM"/>
+                <prop k="draw_inside_polygon" v="0"/>
+                <prop k="joinstyle" v="bevel"/>
+                <prop k="line_color" v="35,35,35,255"/>
+                <prop k="line_style" v="solid"/>
+                <prop k="line_width" v="0.26"/>
+                <prop k="line_width_unit" v="MM"/>
+                <prop k="offset" v="0"/>
+                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="ring_filter" v="0"/>
+                <prop k="use_custom_dash" v="0"/>
+                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option value="" name="name" type="QString"/>
+                    <Option name="properties"/>
+                    <Option value="collection" name="type" type="QString"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </axisSymbol>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings showAll="1" obstacle="0" zIndex="0" dist="0" placement="0" linePlacementFlags="18" priority="0">
+        <properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <referencedLayers/>
+      <referencingLayers/>
+      <fieldConfiguration>
+        <field name="Time">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Time2">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LAT">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LONG">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="TEMP1C">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="TEMP1F">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Humidity">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Pressure">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Altitude">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="Time"/>
+        <alias index="1" name="" field="Time2"/>
+        <alias index="2" name="" field="LAT"/>
+        <alias index="3" name="" field="LONG"/>
+        <alias index="4" name="" field="TEMP1C"/>
+        <alias index="5" name="" field="TEMP1F"/>
+        <alias index="6" name="" field="Humidity"/>
+        <alias index="7" name="" field="Pressure"/>
+        <alias index="8" name="" field="Altitude"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default applyOnUpdate="0" field="Time" expression=""/>
+        <default applyOnUpdate="0" field="Time2" expression=""/>
+        <default applyOnUpdate="0" field="LAT" expression=""/>
+        <default applyOnUpdate="0" field="LONG" expression=""/>
+        <default applyOnUpdate="0" field="TEMP1C" expression=""/>
+        <default applyOnUpdate="0" field="TEMP1F" expression=""/>
+        <default applyOnUpdate="0" field="Humidity" expression=""/>
+        <default applyOnUpdate="0" field="Pressure" expression=""/>
+        <default applyOnUpdate="0" field="Altitude" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="Time" constraints="0"/>
+        <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="Time2" constraints="0"/>
+        <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="LAT" constraints="0"/>
+        <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="LONG" constraints="0"/>
+        <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="TEMP1C" constraints="0"/>
+        <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="TEMP1F" constraints="0"/>
+        <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="Humidity" constraints="0"/>
+        <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="Pressure" constraints="0"/>
+        <constraint notnull_strength="0" exp_strength="0" unique_strength="0" field="Altitude" constraints="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" field="Time" desc=""/>
+        <constraint exp="" field="Time2" desc=""/>
+        <constraint exp="" field="LAT" desc=""/>
+        <constraint exp="" field="LONG" desc=""/>
+        <constraint exp="" field="TEMP1C" desc=""/>
+        <constraint exp="" field="TEMP1F" desc=""/>
+        <constraint exp="" field="Humidity" desc=""/>
+        <constraint exp="" field="Pressure" desc=""/>
+        <constraint exp="" field="Altitude" desc=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns>
+          <column width="-1" name="Time" type="field" hidden="0"/>
+          <column width="-1" name="Time2" type="field" hidden="0"/>
+          <column width="-1" name="LAT" type="field" hidden="0"/>
+          <column width="-1" name="LONG" type="field" hidden="0"/>
+          <column width="-1" name="TEMP1C" type="field" hidden="0"/>
+          <column width="-1" name="TEMP1F" type="field" hidden="0"/>
+          <column width="-1" name="Humidity" type="field" hidden="0"/>
+          <column width="-1" name="Pressure" type="field" hidden="0"/>
+          <column width="-1" name="Altitude" type="field" hidden="0"/>
+          <column width="-1" type="actions" hidden="1"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field name="Altitude" editable="1"/>
+        <field name="Humidity" editable="1"/>
+        <field name="LAT" editable="1"/>
+        <field name="LONG" editable="1"/>
+        <field name="Pressure" editable="1"/>
+        <field name="TEMP1C" editable="1"/>
+        <field name="TEMP1F" editable="1"/>
+        <field name="Time" editable="1"/>
+        <field name="Time2" editable="1"/>
+      </editable>
+      <labelOnTop>
+        <field name="Altitude" labelOnTop="0"/>
+        <field name="Humidity" labelOnTop="0"/>
+        <field name="LAT" labelOnTop="0"/>
+        <field name="LONG" labelOnTop="0"/>
+        <field name="Pressure" labelOnTop="0"/>
+        <field name="TEMP1C" labelOnTop="0"/>
+        <field name="TEMP1F" labelOnTop="0"/>
+        <field name="Time" labelOnTop="0"/>
+        <field name="Time2" labelOnTop="0"/>
+      </labelOnTop>
+      <widgets/>
+      <previewExpression>Humidity</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </maplayers>
+</qlr>
