@@ -40,6 +40,7 @@ Steps to getting you sensors set up.
     *NOTE* two dependencies are labeled 4, make sure you install the package 
         of the sensor that you used
 6. Install all of the packages in terminal:
+    $ sudo pip3 install adafruit-blinka
     $ sudo pip3 install adafruit-circuitpython-busdevice 
     $ sudo pip3 install adafruit-circuitpython-gps 
     $ sudo pip3 install adafruit-circuitpython-MAX3185X
