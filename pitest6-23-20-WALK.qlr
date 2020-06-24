@@ -1,0 +1,260 @@
+<!DOCTYPE qgis-layer-definition>
+<qlr>
+  <layer-tree-group name="" checked="Qt::Checked" expanded="1">
+    <customproperties/>
+    <layer-tree-layer name="pitest6-23-23-testWALK" checked="Qt::Checked" providerKey="delimitedtext" legend_exp="" expanded="1" id="pitest6_23_23_testWALK_42bbb380_afb4_425a_8bf8_cfea5bbefeb9" source="./pitest6-23-23-testWALK.csv?type=csv&amp;detectTypes=yes&amp;xField=LONG&amp;yField=LAT&amp;crs=EPSG:4979&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <maplayers>
+    <maplayer wkbType="Point" simplifyDrawingHints="1" labelsEnabled="0" minScale="100000000" type="vector" refreshOnNotifyEnabled="0" simplifyAlgorithm="0" simplifyDrawingTol="1" geometry="Point" styleCategories="AllStyleCategories" readOnly="0" refreshOnNotifyMessage="" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" simplifyMaxScale="1" autoRefreshEnabled="0" maxScale="0">
+      <extent>
+        <xmin>-73.20729666666666446</xmin>
+        <ymin>44.47052666666666454</ymin>
+        <xmax>-73.19483333333332098</xmax>
+        <ymax>44.48097666666665617</ymax>
+      </extent>
+      <id>pitest6_23_23_testWALK_42bbb380_afb4_425a_8bf8_cfea5bbefeb9</id>
+      <datasource>file:./pitest6-23-23-testWALK.csv?type=csv&amp;detectTypes=yes&amp;xField=LONG&amp;yField=LAT&amp;crs=EPSG:4979&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>pitest6-23-23-testWALK</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,3],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],AXIS["ellipsoidal height (h)",up,ORDER[3],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World (by country)"],BBOX[-90,-180,90,180]],ID["EPSG",4979]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>60111</srsid>
+          <srid>520000111</srid>
+          <authid>EPSG:4979</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="">delimitedtext</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 forceraster="0" type="singleSymbol" symbollevels="0" enableorderby="0">
+        <symbols>
+          <symbol name="0" force_rhr="0" type="marker" alpha="1" clip_to_extent="1">
+            <layer locked="0" pass="0" class="SimpleMarker" enabled="1">
+              <prop v="0" k="angle"/>
+              <prop v="125,139,143,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="circle" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="2" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="MM" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <referencedLayers/>
+      <referencingLayers/>
+      <fieldConfiguration>
+        <field name="Time">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Time2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LAT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LONG">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="TEMP1C">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="TEMP1F">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Humidity">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Pressure">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Altitude">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="Time"/>
+        <alias index="1" name="" field="Time2"/>
+        <alias index="2" name="" field="LAT"/>
+        <alias index="3" name="" field="LONG"/>
+        <alias index="4" name="" field="TEMP1C"/>
+        <alias index="5" name="" field="TEMP1F"/>
+        <alias index="6" name="" field="Humidity"/>
+        <alias index="7" name="" field="Pressure"/>
+        <alias index="8" name="" field="Altitude"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default applyOnUpdate="0" field="Time" expression=""/>
+        <default applyOnUpdate="0" field="Time2" expression=""/>
+        <default applyOnUpdate="0" field="LAT" expression=""/>
+        <default applyOnUpdate="0" field="LONG" expression=""/>
+        <default applyOnUpdate="0" field="TEMP1C" expression=""/>
+        <default applyOnUpdate="0" field="TEMP1F" expression=""/>
+        <default applyOnUpdate="0" field="Humidity" expression=""/>
+        <default applyOnUpdate="0" field="Pressure" expression=""/>
+        <default applyOnUpdate="0" field="Altitude" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="Time"/>
+        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="Time2"/>
+        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="LAT"/>
+        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="LONG"/>
+        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="TEMP1C"/>
+        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="TEMP1F"/>
+        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="Humidity"/>
+        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="Pressure"/>
+        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="Altitude"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="Time" exp=""/>
+        <constraint desc="" field="Time2" exp=""/>
+        <constraint desc="" field="LAT" exp=""/>
+        <constraint desc="" field="LONG" exp=""/>
+        <constraint desc="" field="TEMP1C" exp=""/>
+        <constraint desc="" field="TEMP1F" exp=""/>
+        <constraint desc="" field="Humidity" exp=""/>
+        <constraint desc="" field="Pressure" exp=""/>
+        <constraint desc="" field="Altitude" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </maplayers>
+</qlr>

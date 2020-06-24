@@ -17,11 +17,11 @@ The following packages are dependencies and can be found at the following links:
     https://github.com/adafruit/Adafruit_CircuitPython_BusDevice
 3. Adafruit CircuitPython GPS
     https://github.com/adafruit/Adafruit_CircuitPython_GPS
-4. Adafruit CircuitPython MAX31855 -    INSTALL THE APPROPRIATE PACKAGE 4
+4. Adafruit CircuitPython MAX31855 -    INSTALL THE APPROPRIATE MAX PACKAGE
     https://github.com/adafruit/Adafruit_CircuitPython_MAX31855
-4. Adafruit CircuitPython MAX31856 -    INSTALL THE APPROPRIATE PACKAGE 4
+5. Adafruit CircuitPython MAX31856 -    INSTALL THE APPROPRIATE MAX PACKAGE
     https://github.com/adafruit/Adafruit_CircuitPython_MAX31856
-5. *OPTIONAL* Adafruit CircuitPython BME280
+6. *OPTIONAL* Adafruit CircuitPython BME280
     https://github.com/adafruit/Adafruit_CircuitPython_BME280
 
 * ALL DEPENDENCIES ARE INSTALLED USING PIP *
