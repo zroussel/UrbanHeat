@@ -52,7 +52,8 @@ bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c)
 
 
 starttime=time.time() 
-f = open("pitest6-16-20-test1WALKING.csv","w")
+f = open("pitest{}-{}-{}-test-{}_{}".format( gps.timestamp_utc.tm_mon,gps.timestamp_utc.tm_mday,gps.timestamp_utc.tm_year,gps.timestamp_utc.tm_hour,gps.timestamp_utc.tm_min),"w")
+
 
 RX = board.TX
 TX = board.RX

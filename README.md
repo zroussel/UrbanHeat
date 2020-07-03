@@ -27,13 +27,16 @@ The following packages are dependencies and can be found at the following links:
 * ALL DEPENDENCIES ARE INSTALLED USING PIP *
 
 Steps to getting you sensors set up.
-1. Follow steps 1-3 to set up your raspberryPi with an operating system
-    https://magpi.raspberrypi.org/articles/set-up-raspberry-pi-4
-2. Follow steps here based on operating system to connect to your raspberryPi
-    (You will need an ethernet chord to plug into your router)
-    https://www.dexterindustries.com/howto/connecting-raspberry-pi-without-monitor-beginners/
-3. Use these instructions to check your python version *NOTE* this software 
-    must use atleast python3.X for CircuitPython code to work
+1. Download the Raspberry Pi imager here: https://www.raspberrypi.org/downloads/
+    Plug your SD card into your computer and choose the top option (Raspbian)
+2. Plug your raspberry Pi into a monitor and also plug in a USB mouse and 
+    keyboard. It is possible to set up your RPi without a monitor, but this 
+    process is much less time consuming. 
+3. You must uncomment "hdmi_force_hot=1" in /boot/config.txt so the Pi runs 
+    without a monitor
+4. Go to the Raspberry Pi configuration settings and enable 
+4. Use these instructions to check your python version *NOTE* this software 
+    must use atleast python3.7 for CircuitPython code to work
 4. Install PIP in terminal:
     $ install python3-pip 
 5. Download dependencies from above links
@@ -45,5 +48,5 @@ Steps to getting you sensors set up.
     $ sudo pip3 install adafruit-circuitpython-gps 
     $ sudo pip3 install adafruit-circuitpython-MAX3185X
         X depends on version
-    
+7. Run ALL_SENSORS.py 
 
