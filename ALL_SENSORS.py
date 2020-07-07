@@ -16,7 +16,7 @@ import csv
 import digitalio
 import busio
 import adafruit_max31855
-import adafruit_bme280
+#import adafruit_bme280
 import math
 
 GPIO.setmode(GPIO.BCM)
@@ -27,6 +27,8 @@ GPIO.setmode(GPIO.BCM)
 lightpin = 18
 buttonpin1 = 21
 buttonpin2 = 16
+GPIO.setup(23, GPIO.OUT)
+GPIO.output(23, GPIO.HIGH)
 
 GPIO.setwarnings(False)
 #GPIO.setmode(GPIO.BOARD)
@@ -46,21 +48,29 @@ b = 17.62
 c = 243.12
  
 # Create library object using our Bus I2C port
-i2c = busio.I2C(board.SCL, board.SDA)
-bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c)
+#i2c = busio.I2C(board.SCL, board.SDA)
+#bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c)
 
+uart=serial.Serial('/dev/serial0', baudrate =9600 , timeout = 10)
+gps = adafruit_gps.GPS(uart, debug=False)
+
+
+starttime=time.time()
+T=time.localtime()
+A = T.tm_year
+B = T.tm_mon
+C = T.tm_mday
+D = T.tm_hour
+E = T.tm_min
 
 
 starttime=time.time() 
-f = open("pitest{}-{}-{}-test-{}_{}".format( gps.timestamp_utc.tm_mon,gps.timestamp_utc.tm_mday,gps.timestamp_utc.tm_year,gps.timestamp_utc.tm_hour,gps.timestamp_utc.tm_min),"w")
+f = open("pitest{}-{}-{}-test-{}_{}.csv".format( gps.timestamp_utc.tm_mon,gps.timestamp_utc.tm_mday,gps.timestamp_utc.tm_year,gps.timestamp_utc.tm_hour,gps.timestamp_utc.tm_min),"w")
 
 
 RX = board.TX
 TX = board.RX
 
-uart=serial.Serial('/dev/serial0', baudrate =9600 , timeout = 10)
-
-gps = adafruit_gps.GPS(uart, debug=False)
 
 gps.send_command(b'PMTK314,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0')
 
@@ -72,8 +82,16 @@ while True:
     if GPIO.input(21)== GPIO.LOW:
         GPIO.output(lightpin, GPIO.LOW)
         f.close()
-        exit()
     if GPIO.input(buttonpin2) == GPIO.LOW:
+        T=time.localtime()
+        A = T.tm_year
+        B = T.tm_mon
+        C = T.tm_mday
+        D = T.tm_hour
+        E = T.tm_min
+        f = open("nametest{}-{}-{}-test-{}_{}".format(B,C,A,D,E),"w")
+        wc=csv.writer(f)
+        wc.writerow(["Time","Time2","LAT","LONG","TEMP1C","TEMP1F","Humidity","Pressure","Altitude"])
         while GPIO.input(21) != GPIO.LOW:
 #            GPIO.output(lightpin, GPIO.HIGH)
             # Make sure to call gps.update() every loop iteration and at least twice
@@ -83,6 +101,7 @@ while True:
             gps.update()
             # Every second print out current location details if there's a fix.
             current = time.monotonic()
+            
             if current - last_print >= 1.0:
                 last_print = current
                 if not gps.has_fix:
@@ -112,13 +131,13 @@ while True:
                 TempF = TempC*(9/5) +32
                 #gamma = (b * bme280.temperature /(c + bme280.temperature)) + math.log(bme280.humidity / 100.0)
                 #dewpoint = (c * gamma) / (b - gamma)
-                bme280.sea_level_pressure = 1007.6
-                Temp2=bme280.temperature
-                Temp2F=Temp2*(9/5)+32
-                H = bme280.humidity
-                P = bme280.pressure
-                A = bme280.altitude
+                #bme280.sea_level_pressure = 1007.6
+                #Temp2=bme280.temperature
+                #Temp2F=Temp2*(9/5)+32
+                #H = bme280.humidity
+                #P = bme280.pressure
+                #A = bme280.altitude
                 GPIO.output(lightpin, GPIO.HIGH)
-                print(LAT,LONG,current_time, tspec,TempF,Temp2F)
-                wc.writerow([current_time, tspec,LAT,LONG,TempC,TempF,Temp2,Temp2F,H,P,A])
+                print(LAT,LONG,current_time, tspec,TempF)
+                wc.writerow([current_time, tspec,LAT,LONG,TempC,TempF])
                 
