@@ -64,10 +64,6 @@ D = T.tm_hour
 E = T.tm_min
 
 
-starttime=time.time() 
-f = open("pitest{}-{}-{}-test-{}_{}.csv".format( gps.timestamp_utc.tm_mon,gps.timestamp_utc.tm_mday,gps.timestamp_utc.tm_year,gps.timestamp_utc.tm_hour,gps.timestamp_utc.tm_min),"w")
-
-
 RX = board.TX
 TX = board.RX
 
@@ -89,7 +85,7 @@ while True:
         C = T.tm_mday
         D = T.tm_hour
         E = T.tm_min
-        f = open("nametest{}-{}-{}-test-{}_{}".format(B,C,A,D,E),"w")
+        f = open("testcampus{}-{}-{}-test-{}_{}.csv".format(B,C,A,D,E),"w")
         wc=csv.writer(f)
         wc.writerow(["Time","Time2","LAT","LONG","TEMP1C","TEMP1F","Humidity","Pressure","Altitude"])
         while GPIO.input(21) != GPIO.LOW:
